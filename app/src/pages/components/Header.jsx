@@ -3,7 +3,7 @@ import React from "react";
 import HEADER_LOGO from "../../assets/images/find-logo.png";
 const Header = () => {
   return (
-    <div className="fixed flex h-16 w-full items-center justify-between bg-darkBlack/95  px-5 md:px-24 z-10">
+    <div className="fixed flex h-16 w-full items-center justify-between bg-darkBlack/95  px-5 md:px-24 z-20">
       <div className="h-[2rem] w-[10rem]  overflow-hidden md:w-[12rem]">
         <img
           className="h-full w-full object-contain object-center"
