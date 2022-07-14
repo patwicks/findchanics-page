@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-montserrat text-darkBlack;
+  }
+}
+
+@layer components {
+  .thin-scrollbar {
+    @apply overflow-y-scroll scrollbar-thin scrollbar-track-gray-600 scrollbar-thumb-green-300;
+  }
+}
