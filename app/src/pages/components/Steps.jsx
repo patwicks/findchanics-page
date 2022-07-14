@@ -13,12 +13,15 @@ const Steps = () => {
   ];
   return (
     <div className="container mx-auto h-full overflow-auto py-20">
-      <h1 className="pb-10 text-center text-4xl font-bold">How it works?</h1>
-      <div className="flex flex-wrap items-center justify-center gap-10">
+      <h1 className="pb-10 text-center text-4xl font-bold" data-aos="fade-up">
+        How it works?
+      </h1>
+      <div className="flex flex-wrap items-center justify-center gap-10 overflow-hidden">
         {data.map((item, index) => (
           <div
             className="flex flex-col items-center justify-center"
             key={index}
+            data-aos="fade-up"
           >
             <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand/20">
               <span className="text-3xl font-bold text-brand">{index + 1}</span>

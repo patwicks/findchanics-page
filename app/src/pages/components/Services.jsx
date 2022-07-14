@@ -11,12 +11,15 @@ const Services = () => {
     "Privacy and secure  personal information",
   ];
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center px-10 py-20 md:h-screen md:flex-row md:px-20">
+    <div
+      className="flex h-full w-full flex-col items-center justify-center px-10 py-20 md:h-screen md:flex-row md:px-20"
+      data-aos="fade-up"
+    >
       <div className="w-full md:w-1/2">
         <img src={SERVICE_IMG} alt="ServiceImage" />
       </div>
       <div className="w-full md:w-1/2">
-        <h1 className="my-5 text-4xl font-bold">
+        <h1 className="my-5 text-4xl font-bold leading-[3.5rem]">
           We provide many features that you can use
         </h1>
         {services.map((text, index) => (
