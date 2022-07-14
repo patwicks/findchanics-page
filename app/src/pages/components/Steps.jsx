@@ -27,7 +27,7 @@ const Steps = () => {
               <span className="text-3xl font-bold text-brand">{index + 1}</span>
             </div>
             <h2 className="py-5 text-lg font-semibold">{item.title}</h2>
-            <div className="h-[15rem] w-[8rem] overflow-hidden shadow-lg md:h-[25rem]  md:w-[12.5rem]">
+            <div className="h-[15rem] w-[8rem] overflow-hidden md:h-[25rem]  md:w-[12.5rem]">
               <img
                 className="obeject-contain h-full w-full object-center"
                 src={item.image}

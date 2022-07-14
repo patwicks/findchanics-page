@@ -12,21 +12,21 @@ const Footer = () => {
           alt="FINDCHANICS"
         />
       </div>
-      <p className="text-whitey-100">
+      <p className="text-center text-sm text-whitey-100">
         &copy; 2021 - Finchanics. All rights reserved.
       </p>
-      <div className="flex items-center justify-center gap-5  text-whitey-100 py-5">
+      <div className="flex items-center justify-center gap-5  py-5 text-whitey-100">
         <span className="h-5 w-5">
-          <FiFacebook className="w-full h-full hover:text-brand transition duration-300 ease-in-out cursor-pointer" />
+          <FiFacebook className="h-full w-full cursor-pointer transition duration-300 ease-in-out hover:text-brand" />
         </span>
         <span className="h-5 w-5">
-          <FiInstagram className="w-full h-full hover:text-brand transition duration-300 ease-in-out cursor-pointer" />
+          <FiInstagram className="h-full w-full cursor-pointer transition duration-300 ease-in-out hover:text-brand" />
         </span>
         <span className="h-5 w-5">
-          <FiTwitter className="w-full h-full hover:text-brand transition duration-300 ease-in-out cursor-pointer" />
+          <FiTwitter className="h-full w-full cursor-pointer transition duration-300 ease-in-out hover:text-brand" />
         </span>
         <span className="h-5 w-5">
-          <FiMail className="w-full h-full hover:text-brand transition duration-300 ease-in-out cursor-pointer" />
+          <FiMail className="h-full w-full cursor-pointer transition duration-300 ease-in-out hover:text-brand" />
         </span>
       </div>
     </footer>

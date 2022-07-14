@@ -7,7 +7,8 @@ const Main = () => {
       {/* left side header */}
       <div className="flex h-full w-full flex-col items-center py-10 md:w-[60%] md:items-start">
         <h1 className="relative text-center text-[2.5rem] font-extrabold text-whitey-100 md:text-left md:text-[3.75rem]">
-          A new way of finding an expert to fix your <span className="text-brand">Vehicle</span> 
+          A new way of finding an expert to fix your{" "}
+          <span className="text-brand">Vehicle</span>
         </h1>
         <p className="mt-5 text-center text-base tracking-wide text-whitey-300 md:text-left">
           It provides a fast and efficient solution to your problem.

@@ -20,7 +20,7 @@ const Services = () => {
       </div>
       <div className="w-full md:w-1/2">
         <h1 className="my-5 text-4xl font-bold leading-[3.5rem]">
-          We provide many features that you can use
+          We provide several features that you can use
         </h1>
         {services.map((text, index) => (
           <div className="flex py-2" key={index}>

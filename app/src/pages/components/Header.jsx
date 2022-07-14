@@ -1,17 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 // local
 import HEADER_LOGO from "../../assets/images/find-logo.png";
 const Header = () => {
+  let navigateTo = useNavigate();
   const [show, setShow] = React.useState(false);
   const handleShowNav = () => {
     setShow(!show);
   };
   return (
     <div className="fixed z-20 flex h-16 w-full items-center justify-between  bg-darkBlack/95 px-5 md:px-24">
-      <div className="h-[2rem] w-[10rem]  overflow-hidden md:w-[12rem]">
+      <div
+        className="h-[2rem] w-[10rem]  cursor-pointer overflow-hidden md:w-[12rem]"
+        onClick={() => navigateTo("/")}
+      >
         <img
           className="h-full w-full object-contain object-center"
           src={HEADER_LOGO}
@@ -25,10 +29,16 @@ const Header = () => {
         <HiMenuAlt3 className="block text-xl text-whitey-100 md:hidden " />
       </div>
       <div className="hidden flex-row md:flex">
-        <button className="m-2 w-20 rounded-full border border-brand py-1 text-sm text-whitey-100 hover:bg-brand focus:outline-none">
+        <button
+          className="m-2 w-20 rounded-full border border-brand py-1 text-sm text-whitey-100 hover:bg-brand focus:outline-none"
+          onClick={() => navigateTo("/signin")}
+        >
           Signin
         </button>
-        <button className="m-2 w-20 rounded-full border border-brand bg-brand py-1 text-sm text-whitey-100 transition-all hover:bg-darkBlack focus:outline-none">
+        <button
+          className="m-2 w-20 rounded-full border border-brand bg-brand py-1 text-sm text-whitey-100 transition-all hover:bg-darkBlack focus:outline-none"
+          onClick={() => navigateTo("/signup")}
+        >
           Signup
         </button>
       </div>
@@ -42,13 +52,15 @@ const Header = () => {
         <div className="flex flex-col gap-2">
           <Link
             className="flex h-10 w-full items-center justify-center rounded-md bg-darkBlack/10 text-sm hover:bg-whitey-300"
-            to="/"
+            to="/signin"
+            onClick={handleShowNav}
           >
             Signin
           </Link>
           <Link
             className="flex h-10 w-full items-center justify-center rounded-md bg-darkBlack/10 text-sm hover:bg-whitey-300"
-            to="/"
+            to="/signup"
+            onClick={handleShowNav}
           >
             Signup
           </Link>
