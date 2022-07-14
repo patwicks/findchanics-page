@@ -1,13 +1,15 @@
 import React from "react";
-
+// image
+import PHONE_IMG from "../../assets/images/find-big.png";
 const Main = () => {
   return (
-    <div className="flex h-full w-full items-center justify-center bg-darkBlack py-16 px-8 md:px-14">
-      <div className="mt-14 flex h-screen w-full flex-col items-center py-10 md:w-[80%]">
-        <h1 className="text-center text-[2rem] font-extrabold text-whitey-100 md:text-[3.75rem]">
+    <div className="relative flex h-full w-full items-center justify-center overflow-hidden bg-darkBlack py-16 px-8 md:px-20">
+      {/* left side header */}
+      <div className="flex h-full w-full flex-col items-center py-10 md:w-[60%] md:items-start">
+        <h1 className="text-center text-[2.5rem] font-extrabold text-whitey-100 md:text-left md:text-[3.75rem]">
           A new way of finding an expert to fix your vehicle
         </h1>
-        <p className="mt-5 text-center text-base tracking-wide text-whitey-300">
+        <p className="mt-5 text-center text-base tracking-wide text-whitey-300 md:text-left">
           It provides a fast and efficient solution to your problem.
         </p>
         <button className="mt-16 flex w-[10rem] items-center justify-center rounded-sm bg-brand py-1 text-center font-semibold text-white transition-all hover:opacity-70">
@@ -29,6 +31,23 @@ const Main = () => {
             </svg>
           </span>
         </button>
+      </div>
+      {/* right picture */}
+      <div className="hidden h-[80vh] items-center justify-center transition duration-500 ease-in-out md:flex md:w-[40%]">
+        <div className=" h-[80%] w-[80%] ">
+          <img
+            className="h-full w-full object-contain object-center"
+            src={PHONE_IMG}
+            alt="Phone"
+          />
+        </div>
+      </div>
+      <div className="absolute -bottom-14 -right-16 h-[20rem] rotate-[30deg] transform text-white md:hidden">
+        <img
+          className="h-full w-full object-contain object-center opacity-70"
+          src={PHONE_IMG}
+          alt="Phone"
+        />
       </div>
     </div>
   );
