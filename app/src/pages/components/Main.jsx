@@ -3,7 +3,7 @@ import React from "react";
 import PHONE_IMG from "../../assets/images/find-big.png";
 const Main = () => {
   return (
-    <div className="relative z-20 flex h-full w-full items-center justify-center overflow-hidden bg-darkBlack py-16 px-8 md:px-20">
+    <div className="z-100 relative flex h-full w-full items-center justify-center overflow-hidden bg-darkBlack py-16 px-8 md:px-20">
       {/* left side header */}
       <div className="flex h-full w-full flex-col items-center py-10 md:w-[60%] md:items-start">
         <h1 className="text-center text-[2.5rem] font-extrabold text-whitey-100 md:text-left md:text-[3.75rem]">
@@ -42,7 +42,7 @@ const Main = () => {
           />
         </div>
       </div>
-      <div className="absolute -bottom-14 -right-16 -z-10 h-[20rem] rotate-[30deg] transform text-white md:hidden">
+      <div className="-z-100 absolute -bottom-14 -right-16 h-[20rem] rotate-[30deg] transform text-white md:hidden">
         <img
           className="h-full w-full object-contain object-center opacity-50"
           src={PHONE_IMG}
