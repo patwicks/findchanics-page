@@ -4,6 +4,7 @@ import FIND from "../../assets/images/find-white.png";
 import REQUEST from "../../assets/images/request-white.png";
 import COMMUNICATE from "../../assets/images/communicate-white.png";
 import FEEDBACK from "../../assets/images/feedback-white.png";
+
 const Steps = () => {
   const data = [
     { image: FIND, title: "Find a shop" },

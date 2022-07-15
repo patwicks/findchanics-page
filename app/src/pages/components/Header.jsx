@@ -52,6 +52,13 @@ const Header = () => {
         <div className="flex flex-col gap-2">
           <Link
             className="flex h-10 w-full items-center justify-center rounded-md bg-darkBlack/10 text-sm hover:bg-whitey-300"
+            to="/"
+            onClick={handleShowNav}
+          >
+            Home
+          </Link>
+          <Link
+            className="flex h-10 w-full items-center justify-center rounded-md bg-darkBlack/10 text-sm hover:bg-whitey-300"
             to="/signin"
             onClick={handleShowNav}
           >
@@ -64,6 +71,10 @@ const Header = () => {
           >
             Signup
           </Link>
+        </div>
+        <div className="absolute right-0 left-0 bottom-5 flex w-full flex-col items-center justify-center">
+          <p className="text-[0.6rem] font-light">v1.0.12</p>
+          <p className="text-[0.6rem] font-light">Developed by:Dev Pat</p>
         </div>
       </div>
     </div>

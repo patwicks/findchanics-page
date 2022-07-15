@@ -34,7 +34,7 @@ const Main = () => {
         </button>
       </div>
       {/* right picture */}
-      <div className="hidden h-[80vh] items-center justify-center transition duration-500 ease-in-out md:flex md:w-[40%]">
+      <div className="hidden h-[90vh] items-center justify-center transition duration-500 ease-in-out md:flex md:w-[40%]">
         <div className=" h-[80%] w-[80%] ">
           <img
             className="h-full w-full object-contain object-center"
