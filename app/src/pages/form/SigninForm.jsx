@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 const SigninForm = (props) => {
   const navigateTo = useNavigate();
+  const inputRef = useRef();
   const [showPassword, setShowPassword] = useState(false);
   const {
     values,
@@ -14,6 +15,10 @@ const SigninForm = (props) => {
     errors,
     touched,
   } = props;
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
   return (
     <div className="w-full max-w-[30rem] px-5 py-10">
       <h1 className="py-2 text-2xl font-bold">Login your account</h1>
@@ -28,6 +33,8 @@ const SigninForm = (props) => {
             className="text-md h-full w-full rounded-sm border-[1px] border-darkBlack bg-transparent px-3 outline-none focus:border-[2px]"
             type="email"
             name="email"
+            ref={inputRef}
+            autoComplete="off"
             required
             placeholder="Type your email address"
             value={values.email}
@@ -50,6 +57,7 @@ const SigninForm = (props) => {
             type={!showPassword ? "password" : "text"}
             name="password"
             placeholder="Type your password"
+            autoComplete="off"
             value={values.password}
             onChange={handleChange}
             onBlur={handleBlur}

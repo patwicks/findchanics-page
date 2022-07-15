@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div className="z-100 relative flex h-full w-full items-center justify-center overflow-hidden bg-darkBlack py-16 px-8 md:px-20">
       {/* left side header */}
-      <div className="flex h-full w-full flex-col items-center py-10 md:w-[60%] md:items-start">
+      <div className="flex  h-full w-full flex-col items-center py-10 md:w-[60%] md:items-start">
         <h1 className="relative text-center text-[2.5rem] font-extrabold text-whitey-100 md:text-left md:text-[3.75rem]">
           A new way of finding an expert to fix your{" "}
           <span className="text-brand">Vehicle</span>

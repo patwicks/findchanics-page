@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 const SignupForm = (props) => {
   const navigateTo = useNavigate();
+  const inputRef = useRef();
   const [showPassword, setShowPassword] = useState(false);
   const {
     values,
@@ -14,6 +15,10 @@ const SignupForm = (props) => {
     errors,
     touched,
   } = props;
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
   return (
     <div className="w-full max-w-[30rem] px-5 py-10">
       <h1 className="py-2 text-2xl font-bold">Create an account</h1>
@@ -29,6 +34,8 @@ const SignupForm = (props) => {
             type="text"
             name="first_name"
             required
+            ref={inputRef}
+            autoComplete="off"
             placeholder="Type your first name"
             value={values.first_name}
             onChange={handleChange}
@@ -50,6 +57,7 @@ const SignupForm = (props) => {
             type="text"
             name="last_name"
             required
+            autoComplete="off"
             placeholder="Type your last name"
             value={values.last_name}
             onChange={handleChange}
@@ -70,6 +78,7 @@ const SignupForm = (props) => {
             type="email"
             name="email"
             required
+            autoComplete="off"
             placeholder="Type your email address"
             value={values.email}
             onChange={handleChange}
