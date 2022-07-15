@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 // image
 import PHONE_IMG from "../../assets/images/find-big.png";
 const Main = () => {
+  let navigateTo = useNavigate();
   return (
     <div className="z-100 relative flex h-full w-full items-center justify-center overflow-hidden bg-darkBlack py-16 px-8 md:px-20">
       {/* left side header */}
@@ -13,7 +15,10 @@ const Main = () => {
         <p className="mt-5 text-center text-base tracking-wide text-whitey-300 md:text-left">
           It provides a fast and efficient solution to your problem.
         </p>
-        <button className="mt-16 flex w-[10rem] items-center justify-center rounded-sm bg-brand py-2 text-center font-semibold text-white transition-all hover:opacity-70">
+        <button
+          className="mt-16 flex w-[10rem] items-center justify-center rounded-sm bg-brand py-2 text-center font-semibold text-white transition-all hover:opacity-70"
+          onClick={() => navigateTo("/signup")}
+        >
           Dowload
           <span className="ml-2">
             <svg

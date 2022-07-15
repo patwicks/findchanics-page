@@ -10,7 +10,7 @@ const SignupPage = () => {
   //formik
   const onSubmit = (values, actions) => {
     setTimeout(() => {
-      console.log(values);
+      actions.resetForm();
       actions.setSubmitting(false);
     }, 3000);
   };

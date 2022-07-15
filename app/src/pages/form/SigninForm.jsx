@@ -15,7 +15,7 @@ const SigninForm = (props) => {
     touched,
   } = props;
   return (
-    <div className="w-full max-w-[30rem] border px-5 py-10">
+    <div className="w-full max-w-[30rem] px-5 py-10">
       <h1 className="py-2 text-2xl font-bold">Login your account</h1>
       <p className="text-sm">Use correct email and password to login</p>
       <form className="mt-8 flex w-full flex-col" onSubmit={handleSubmit}>

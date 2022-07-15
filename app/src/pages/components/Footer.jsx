@@ -13,7 +13,7 @@ const Footer = () => {
         />
       </div>
       <p className="text-center text-sm text-whitey-100">
-        &copy; 2021 - Finchanics. All rights reserved.
+        &copy; 2021 - Findchanics. All rights reserved.
       </p>
       <div className="flex items-center justify-center gap-5  py-5 text-whitey-100">
         <span className="h-5 w-5">
