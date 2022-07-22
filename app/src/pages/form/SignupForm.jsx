@@ -154,7 +154,7 @@ const SignupForm = (props) => {
         </button>
       </form>
       <p className="mt-5 text-sm">
-        Not yet registered?{" "}
+        Registered already?{" "}
         <span
           className="decoration cursor-pointer underline hover:text-brand"
           onClick={() => navigateTo("/signin")}
